@@ -104,6 +104,10 @@ section {
     background-color: var(--secondary);
 }
 
+.menu-label, #menu-check {
+    display: none;
+}
+
 @media (max-width: 600px) {
   
     section {
@@ -117,6 +121,7 @@ section {
       padding: 0;
       margin-top: -280px;
       transition: all 1s;
+      z-index: 0;
     }
   
     .aside-wrap .menu-list {
@@ -133,13 +138,15 @@ section {
   
     .menu-label {
       padding: 10px;
-      border: 1px solid;
+      /* border: 1px solid; */
       display: block;
       position: fixed;
       top: 0;
       right: 0;
       background-color: #fff;
       margin: 5px;
+      z-index: 1;
+      font-size: 20px;
     }
   
     #menu-check {
